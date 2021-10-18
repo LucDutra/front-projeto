@@ -1,5 +1,5 @@
 export class cadastroAluno{
-    id?: number;
+    nome?: String;
     escola?: String;
     cpf?: String;
     telefone?: String;
