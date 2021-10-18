@@ -1,4 +1,4 @@
-export class cadastroAluno{
+export class infoProfessor{
     nome?: number;
     email?: String;
     telefone?: String;
