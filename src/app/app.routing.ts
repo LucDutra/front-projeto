@@ -14,13 +14,13 @@ import { CadastroProfessorComponent } from './cadastro-professor/cadastro-profes
 import { ModuleWithProviders } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 
-import { HomeComponent } from './home/home.component';
+
 
 
 const APP_ROUTES: Routes = [
 
 
-    { path: '', component: HomeComponent },
+    
     { path: 'cadastroProfessor', component: CadastroProfessorComponent },
     { path: 'painelAluno', component: PainelAlunoComponent },
     { path: 'tabelaTurma', component: TabelaTurmaComponent },
