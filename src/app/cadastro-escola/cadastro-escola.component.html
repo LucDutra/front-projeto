@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!--style CSS-->
+    <link rel="stylesheet" href="cadastro-escola.component.css">
+
+    <title>Cadastro Escola</title>
+
+</head>
+
+<body class="bg-info">
+
+    <header>
+        <!--inicio cabeçalho-->
+
+        <nav class="navbar navbar-expand-sm navbar-light bg-info">
+            <div class="container-fluid logo">
+                <a class="navbar-brand" href="#">
+                    <img src="img/Logo.png" alt="">
+                </a>
+            </div>
+        </nav>
+
+    </header>
+    <!--fim cabeçalho-->
+
+
+    <h1>Cadastro Da Escola</h1>
+
+    <form class="row g-3 mt-3 bg-dark border border-secondary mx-auto">
+        <div class="col-md-12">
+            <label for="nome" class="form-label letras">Nome</label>
+            <input type="text" class="form-control" id="nome" placeholder="Nome da Instituição...">
+        </div>
+
+        <div class="col-12">
+            <label for="endereco" class="form-label letras">Endereço</label>
+            <input type="text" class="form-control" id="endereco" placeholder="N° Rua...">
+        </div>
+        <div class="col-12">
+            <label for="telefone" class="form-label letras">Telefone</label>
+            <input type="text" class="form-control" id="telefone" placeholder="55+ (DDD)...">
+        </div>
+        <div class="col-md-6">
+            <label for="cidade" class="form-label letras">Cidade</label>
+            <input type="text" class="form-control" id="cidade">
+        </div>
+        <div class="col-md-6">
+            <label for="uf" class="form-label letras">UF</label>
+            <select id="uf" class="form-select">
+                <option selected>...</option>
+                <option>RS</option>
+                <option>SC</option>
+                <option>PR</option>
+            </select>
+        </div>
+        <div class="col-md-12">
+            <label for="cnpj" class="form-label letras">CNPJ</label>
+            <input type="text" class="form-control" id="cnpj">
+        </div>
+
+        <div>
+            <button type="submit" class="btn btn-outline-light mb-1">Enviar</button>
+            <a href="login.html" class="btn btn-outline-light mb-1">Login</a>
+        </div>
+
+    </form>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

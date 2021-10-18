@@ -1,0 +1,18 @@
+.logo {
+    height: 100px;
+}
+
+.button{
+    text-align: center;
+}
+
+.geral {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100%;
+    background-color: #0dcaf0;
+    background-clip: padding-box;
+    text-align: center;
+  
+}
