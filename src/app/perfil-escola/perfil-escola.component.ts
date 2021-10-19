@@ -20,4 +20,8 @@ export class PerfilEscolaComponent implements OnInit {
     this.router.navigate(['']);
   }
 
+  public cadastrarEscola() {
+    this.router.navigate(['/cadastroEscola']);
+  }
+
 }
