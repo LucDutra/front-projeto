@@ -1,10 +1,8 @@
 import { TurmaComponent } from './turma/turma.component';
 import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
-import { TelaProfessoresComponent } from './tela-professores/tela-professores.component';
 import { TabelaAlunoComponent } from './tabela-aluno/tabela-aluno.component';
 import { PerfilEscolaComponent } from './perfil-escola/perfil-escola.component';
 import { PainelProfessorComponent } from './painel-professor/painel-professor.component';
-import { ListaAlunosComponent } from './lista-alunos/lista-alunos.component';
 import { InfoProfessorComponent } from './info-professor/info-professor.component';
 import { InfoEscolaComponent } from './info-escola/info-escola.component';
 import { CadastroEscolaComponent } from './cadastro-escola/cadastro-escola.component';
@@ -31,11 +29,9 @@ const APP_ROUTES: Routes = [
     { path: 'cadastroEscola', component: CadastroEscolaComponent },
     { path: 'infoEscola', component: InfoEscolaComponent },
     { path: 'infoProfessor', component: InfoProfessorComponent },
-    { path: 'listaAlunos', component: ListaAlunosComponent },
     { path: 'painelProfessor', component: PainelProfessorComponent },
     { path: 'perfilEscola', component: PerfilEscolaComponent },
     { path: 'tabelaAluno', component: TabelaAlunoComponent },
-    { path: 'telaProfessor', component: TelaProfessoresComponent },
     { path: 'turma', component: TurmaComponent  }
 
 ];

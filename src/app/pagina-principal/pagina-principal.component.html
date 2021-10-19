@@ -45,7 +45,7 @@
         <!--inicio barra lateral-->
         <div class="navbar-nav ">
           <br>
-          <button (click)="telaPerfilEscola()" type="button" class="btn btn-outline-light mb-1">Perfil</button>
+          <button (click)="PerfilEscola()" type="button" class="btn btn-outline-light mb-1">Perfil</button>
           <br>
 
           <div class="btn-group" role="group">
@@ -54,18 +54,17 @@
               Turmas
             </button>
             <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-              <li><a class="dropdown-item" href="#">1a</a></li>
+              <li><a (click)="TabelaTurma()" class="dropdown-item">1a</a></li>
 
             </ul>
 
 
           </div> <br>
 
-
-          <a (click)="telaCadastroAluno()" class="btn btn-outline-light" tabindex="-1" aria-disabled="true">Cadastrar
+          <a (click)="CadastroAluno()" class="btn btn-outline-light" tabindex="-1" aria-disabled="true">Cadastrar
             Aluno</a> <br>
 
-            <a (click)="telaCadastroProfessor()" class="btn btn-outline-light" tabindex="-1" aria-disabled="true">Cadastrar
+            <a (click)="CadastroProfessor()" class="btn btn-outline-light" tabindex="-1" aria-disabled="true">Cadastrar
               Professor</a> <br> 
 
         </div>

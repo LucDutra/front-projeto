@@ -12,11 +12,9 @@ import { CadastroAlunoComponent } from './cadastro-aluno/cadastro-aluno.componen
 import { CadastroEscolaComponent } from './cadastro-escola/cadastro-escola.component';
 import { InfoEscolaComponent } from './info-escola/info-escola.component';
 import { InfoProfessorComponent } from './info-professor/info-professor.component';
-import { ListaAlunosComponent } from './lista-alunos/lista-alunos.component';
 import { PainelProfessorComponent } from './painel-professor/painel-professor.component';
 import { PerfilEscolaComponent } from './perfil-escola/perfil-escola.component';
 import { TabelaAlunoComponent } from './tabela-aluno/tabela-aluno.component';
-import { TelaProfessoresComponent } from './tela-professores/tela-professores.component';
 import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
 import { TurmaComponent } from './turma/turma.component';
 
@@ -31,11 +29,9 @@ import { TurmaComponent } from './turma/turma.component';
     CadastroEscolaComponent,
     InfoEscolaComponent,
     InfoProfessorComponent,
-    ListaAlunosComponent,
     PainelProfessorComponent,
     PerfilEscolaComponent,
     TabelaAlunoComponent,
-    TelaProfessoresComponent,
     PaginaPrincipalComponent,
     TurmaComponent
   ],

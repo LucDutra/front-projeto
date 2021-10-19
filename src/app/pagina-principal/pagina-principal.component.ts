@@ -16,16 +16,20 @@ export class PaginaPrincipalComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public telaPerfilEscola() {
+  public PerfilEscola() {
     this.router.navigate(['/perfilEscola']);
   }
 
-  public telaCadastroAluno() {
+  public CadastroAluno() {
     this.router.navigate(['/cadastroAluno']);
   }
 
-  public telaCadastroProfessor() {
+  public CadastroProfessor() {
     this.router.navigate(['/cadastroProfessor']);
+  }
+
+  public TabelaTurma() {
+    this.router.navigate(['/turma']);
   }
 
   
