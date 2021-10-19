@@ -20,4 +20,8 @@ export class PaginaPrincipalComponent implements OnInit {
     this.router.navigate(['/perfilEscola']);
   }
 
+  public telaCadastroAluno() {
+    this.router.navigate(['/cadastroAluno']);
+  }
+
 }
