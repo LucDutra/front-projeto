@@ -26,7 +26,7 @@ export class ServiceGeralService {
   }
 
   getAlunoEspecificoById(id: number) {
-    return this.http.get<alunoEspecifico>(this.alunoEspecificoUrl + "/" + id);
+    return ""
   }
 
   update(alunoEspecifico: alunoEspecifico) {

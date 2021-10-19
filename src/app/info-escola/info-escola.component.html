@@ -1,111 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="text-center">
+    <h1>Informações das Escola</h1>
+</div>
+<div class="d-flex justify-content-end">
+    <button (click)="voltar()" type="button" class="btn btn-success" style="margin-right: 48px;">Voltar</button>
+</div>
+<div class="geral">
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#ID</th>
+                <th scope="col">Nome da Escola</th>
+                <th scope="col">CNPJ</th>
+                <th scope="col">Telefone</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Escola Barão do Rio Branco</td>
+                <td>
+                    <div class="form-check">
 
-<head>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            07.356.942/0001-69
+                        </label>
 
-    <meta charset="UTF-8">
+                    </div>
+                </td>
+                <td>
+                    (47) 3322-6133
+                </td>
+                <td class="button">
+                    <button type="button" class="btn btn-outline-light">X</button>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Santos Dumont</td>
+                <td>
+                    <div class="form-check">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            07.584.786/0001-50
+                        </label>
 
-    <title>Informações das Escolas</title>
+                    </div>
+                </td>
+                <td>
+                    (47) 3378-8686
+                </td>
+                <td class="abc">
+                    <button type="button" class="btn btn-outline-light">X</button>
 
-    <link rel="stylesheet" href="info-escola.component.css">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
-</head>
-
-<body>
-
-    <header>
-        <!--inicio cabeçalho-->
-
-        <nav class="navbar navbar-expand-sm navbar-light bg-info">
-            <div class="container-fluid logo">
-                <a class="navbar-brand" href="#">
-                    <img src="img/Logo.png" alt="">
-                </a>
-            </div>
-        </nav>
-
-    </header>
-    <!--fim cabeçalho-->
-
-    <div class="geral">
-        <table class="table table-dark table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">#ID</th>
-                    <th scope="col">Nome da Escola</th>
-                    <th scope="col">CNPJ</th>
-                    <th scope="col">Telefone</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Escola Barão do Rio Branco</td>
-                    <td>
-                        <div class="form-check">
-
-                            <label class="form-check-label" for="flexCheckDefault">
-                                07.356.942/0001-69
-                            </label>
-
-                        </div>
-                    </td>
-                    <td>
-                        (47) 3322-6133
-                    </td>
-                    <td class="button">
-                        <button type="button" class="btn btn-outline-light">X</button>
-
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Santos Dumont</td>
-                    <td>
-                        <div class="form-check">
-
-                            <label class="form-check-label" for="flexCheckDefault">
-                                07.584.786/0001-50
-                            </label>
-
-                        </div>
-                    </td>
-                    <td>
-                        (47) 3378-8686
-                    </td>
-                    <td class="abc">
-                        <button type="button" class="btn btn-outline-light">X</button>
-
-                    </td>
-                </tr>
-
-
-            </tbody>
-        </table>
-    </div>
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
-    -->
-
-</body>
-
-</html>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

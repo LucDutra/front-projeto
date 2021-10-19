@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tabela-turma',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabelaTurmaComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  public voltar() {
+    this.router.navigate(['/painelProfessor']);
+  }
+
+  public tabelaAluno() {
+    this.router.navigate(['/tabelaAluno']);
+  }
+
+  public perfilAluno() {
+    this.router.navigate(['/alunoEspecifico']);
   }
 
 }
