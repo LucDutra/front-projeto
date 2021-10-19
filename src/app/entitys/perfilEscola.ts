@@ -6,5 +6,4 @@ export class perfilEscola{
     cnpj?: String;
     email?: String;
     matricula?: number;
-   
 }
