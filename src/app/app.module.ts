@@ -17,6 +17,7 @@ import { PainelProfessorComponent } from './painel-professor/painel-professor.co
 import { PerfilEscolaComponent } from './perfil-escola/perfil-escola.component';
 import { TabelaAlunoComponent } from './tabela-aluno/tabela-aluno.component';
 import { TelaProfessoresComponent } from './tela-professores/tela-professores.component';
+import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { TelaProfessoresComponent } from './tela-professores/tela-professores.co
     PainelProfessorComponent,
     PerfilEscolaComponent,
     TabelaAlunoComponent,
-    TelaProfessoresComponent
+    TelaProfessoresComponent,
+    PaginaPrincipalComponent
   ],
   imports: [
     BrowserModule,

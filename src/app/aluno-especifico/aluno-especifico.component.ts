@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-aluno-especifico',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlunoEspecificoComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  public voltar() {
+    this.router.navigate(['/tabelaTurma']);
+  }
+
+  public perfilAluno() {
+    this.router.navigate(['/painelAluno']);
   }
 
 }

@@ -1,3 +1,4 @@
+import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
 import { TelaProfessoresComponent } from './tela-professores/tela-professores.component';
 import { TabelaAlunoComponent } from './tabela-aluno/tabela-aluno.component';
 import { PerfilEscolaComponent } from './perfil-escola/perfil-escola.component';
@@ -20,7 +21,7 @@ import { RouterModule, Routes } from "@angular/router";
 const APP_ROUTES: Routes = [
 
 
-    
+    { path: '', component: PaginaPrincipalComponent  },
     { path: 'cadastroProfessor', component: CadastroProfessorComponent },
     { path: 'painelAluno', component: PainelAlunoComponent },
     { path: 'tabelaTurma', component: TabelaTurmaComponent },

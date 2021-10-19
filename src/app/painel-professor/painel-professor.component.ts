@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-painel-professor',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PainelProfessorComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  public telaInfoProfessor() {
+    this.router.navigate(['/infoProfessor']);
+  }
+
+  public telaInfoEscola() {
+    this.router.navigate(['/infoEscola']);
+  }
+
+  public telaTabelaTurma() {
+    this.router.navigate(['/tabelaTurma']);
   }
 
 }
