@@ -1,6 +1,9 @@
+import { cadastroAluno } from './../entitys/cadastroAluno';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { alunoEspecifico } from '../entitys/alunoEspecifico';
+
+
 
 @Injectable({
   providedIn: 'root'
@@ -12,6 +15,7 @@ export class ServiceGeralService {
   baseURL = "http://localhost:8080";
 
   alunoEspecificoUrl = this.baseURL + "/alunoEspecifico";
+
 
 
 
@@ -35,6 +39,13 @@ export class ServiceGeralService {
   // CRUD Aluno especifico FINAL  <------------------
 
 
+// CRUD Cadasto ALUNO INICIO  <------------------
+cadastroAlunoUrl = this.baseURL + "/cadastroAluno";
+
+addCadastroAluno(cadastroAluno: cadastroAluno) {
+  return this.http.post<cadastroAluno>(this.cadastroAlunoUrl, cadastroAluno);
+}
   
+// CRUD Cadasto ALUNO  FINAL  <------------------
 
 }

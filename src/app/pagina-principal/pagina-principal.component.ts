@@ -24,4 +24,6 @@ export class PaginaPrincipalComponent implements OnInit {
     this.router.navigate(['/cadastroAluno']);
   }
 
+  
+
 }
