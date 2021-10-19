@@ -1,150 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Tabela Turmas</title>
-
-    <link rel="stylesheet" href="tabela-turma.component.css">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
-</head>
-
-<body>
-
-    <header>
-        <!--inicio cabeçalho-->
-
-        <nav class="navbar navbar-expand-sm navbar-light bg-info">
-            <div class="container-fluid logo">
-                <a class="navbar-brand" href="#">
-                    <img src="img/Logo.png" alt="">
-                </a>
-            </div>
-        </nav>
-
-    </header>
-    <!--fim cabeçalho-->
-
-
-    <div class="geral">
-        <table class="table table-dark table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">Escola</th>
-                    <th scope="col">Turma</th>
-                    <th scope="col">Número de Alunos</th>
-                    <th scope="col">Opções</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">Santos Dumont</th>
-                    <td>1A</td>
-                    <td>
-                        <div class="form-check">
-
-                            <label class="form-check-label" for="flexCheckDefault">
-                                20
-                            </label>
-
+<div class="text-center">
+    <h1>Tabela Turmas</h1>
+</div>
+<div class="d-flex justify-content-end">
+    <button (click)="voltar()" type="button" class="btn btn-success" style="margin-right: 48px;">Voltar</button>
+</div>
+<div class="geral">
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Escola</th>
+                <th scope="col">Turma</th>
+                <th scope="col">Número de Alunos</th>
+                <th scope="col">Opções</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Santos Dumont</th>
+                <td>1A</td>
+                <td>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            20
+                        </label>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex justify-content-center">
+                        <div class="p-2 bd-highlight">
+                            <button (click)="tabelaAluno()" type="button" class="btn btn-primary">Iniciar Aula</button>
                         </div>
-                    </td>
-                    <td> <select class="form-select" aria-label="Default select example">
-                            <option selected>Opções</option>
-                            <option value="1">Iniciar Aula</option>
-                            <option value="2">Perfil dos Alunos</option>
-
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">Santos Dumont</th>
-                    <td>3C</td>
-                    <td>
-                        <div class="form-check">
-
-                            <label class="form-check-label" for="flexCheckDefault">
-                                40
-                            </label>
-
+                        <div class="p-2 bd-highlight">
+                            <button (click)="perfilAluno()" type="button" class="btn btn-primary">Perfil do Aluno</button>
                         </div>
-                    </td>
-                    <td> <select class="form-select" aria-label="Default select example">
-                            <option selected>Opções</option>
-                            <option value="1">Iniciar Aula</option>
-                            <option value="2">Perfil Dos Alunos</option>
-
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">Barão Do Rio Branco</th>
-                    <td>2A</td>
-                    <td>
-                        <div class="form-check">
-
-                            <label class="form-check-label" for="flexCheckDefault">
-                                40
-                            </label>
-
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Santos Dumont</th>
+                <td>3C</td>
+                <td>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            40
+                        </label>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex justify-content-center">
+                        <div class="p-2 bd-highlight">
+                            <button (click)="tabelaAluno()" type="button" class="btn btn-primary">Iniciar Aula</button>
                         </div>
-                    </td>
-                    <td> <select class="form-select" aria-label="Default select example">
-                            <option selected>Opções</option>
-                            <option value="1">Iniciar Aula</option>
-                            <option value="2">Perfil Dos Alunos</option>
-
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">Barão Do Rio Branco</th>
-                    <td>1B</td>
-                    <td>
-                        <div class="form-check">
-
-                            <label class="form-check-label" for="flexCheckDefault">
-                                37
-                            </label>
-
+                        <div class="p-2 bd-highlight">
+                            <button (click)="perfilAluno()" type="button" class="btn btn-primary">Perfil do Aluno</button>
                         </div>
-                    </td>
-                    <td> <select class="form-select" aria-label="Default select example">
-                            <option selected>Opções</option>
-                            <option value="1">Iniciar Aula</option>
-                            <option value="2">Perfil Dos Alunos</option>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Barão Do Rio Branco</th>
+                <td>2A</td>
+                <td>
+                    <div class="form-check">
 
-                        </select>
-                    </td>
-                </tr>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            40
+                        </label>
 
-            </tbody>
-        </table>
-    </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex justify-content-center">
+                        <div class="p-2 bd-highlight">
+                            <button (click)="tabelaAluno()" type="button" class="btn btn-primary">Iniciar Aula</button>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <button (click)="perfilAluno()" type="button" class="btn btn-primary">Perfil do Aluno</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Barão Do Rio Branco</th>
+                <td>1B</td>
+                <td>
+                    <div class="form-check">
 
+                        <label class="form-check-label" for="flexCheckDefault">
+                            37
+                        </label>
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
-    -->
-
-</body>
-
-</html>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex justify-content-center">
+                        <div class="p-2 bd-highlight">
+                            <button (click)="tabelaAluno()" type="button" class="btn btn-primary">Iniciar Aula</button>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <button (click)="perfilAluno()" type="button" class="btn btn-primary">Perfil do Aluno</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

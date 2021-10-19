@@ -14,12 +14,7 @@ import { CadastroProfessorComponent } from './cadastro-professor/cadastro-profes
 import { ModuleWithProviders } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 
-
-
-
 const APP_ROUTES: Routes = [
-
-
     
     { path: 'cadastroProfessor', component: CadastroProfessorComponent },
     { path: 'painelAluno', component: PainelAlunoComponent },
