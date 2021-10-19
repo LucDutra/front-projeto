@@ -1,11 +1,3 @@
-.logo {
-    height: 100px;
-}
-
-.button{
-    text-align: center;
-}
-
 .geral {
     padding-top: 50px;
     padding-left: 50px;
@@ -15,4 +7,16 @@
     background-clip: padding-box;
     text-align: center;
   
+}
+
+.button{
+    text-align: center;
+}
+
+.professor{
+    
+}
+
+.aluno{
+    padding-top:-500px;
 }

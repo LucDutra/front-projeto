@@ -1,3 +1,4 @@
+import { TurmaComponent } from './turma/turma.component';
 import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
 import { TelaProfessoresComponent } from './tela-professores/tela-professores.component';
 import { TabelaAlunoComponent } from './tabela-aluno/tabela-aluno.component';
@@ -34,7 +35,8 @@ const APP_ROUTES: Routes = [
     { path: 'painelProfessor', component: PainelProfessorComponent },
     { path: 'perfilEscola', component: PerfilEscolaComponent },
     { path: 'tabelaAluno', component: TabelaAlunoComponent },
-    { path: 'telaProfessor', component: TelaProfessoresComponent }
+    { path: 'telaProfessor', component: TelaProfessoresComponent },
+    { path: 'turma', component: TurmaComponent  }
 
 ];
 
