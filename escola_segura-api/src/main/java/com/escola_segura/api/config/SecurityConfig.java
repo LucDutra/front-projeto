@@ -1,4 +1,4 @@
-package com.escola_segura.api.escola_seguraapi.config;
+package com.escola_segura.api.config;
 
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

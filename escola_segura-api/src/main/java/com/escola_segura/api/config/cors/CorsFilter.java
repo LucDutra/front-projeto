@@ -1,4 +1,4 @@
-package com.escola_segura.api.escola_seguraapi.config.cors;
+package com.escola_segura.api.config.cors;
 
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
@@ -26,7 +26,7 @@ public class CorsFilter implements Filter {
         if ("OPTIONS".equals(request.getMethod()) && originPermitida.equals(request.getHeader("Origin"))) {
             response.setHeader("Access-Control-Allow-Methods", "POST, GET, DELETE, PUT, OPTIONS");
             response.setHeader("Access-Control-Allow-Headers", "Authorization, Content-Type, Accept");
-            response.setHeader("Access-Control-Max-Age", "3600");
+            response.setHeader("Access-Control-Max-Age", "3306");
 
             response.setStatus(HttpServletResponse.SC_OK);
         } else {
