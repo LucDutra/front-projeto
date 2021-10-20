@@ -1,5 +1,6 @@
 package com.escola_segura.api.controller;
 
+import com.escola_segura.api.model.entity.Deficiencia;
 import com.escola_segura.api.model.entity.EscolaUnica;
 import com.escola_segura.api.model.repositories.EscolaUnicaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,5 +34,15 @@ public class EscolaUnicaController {
             repository.deleteById(id);
         }
     }
+
+  @PutMapping("/{id}")
+  public void atualizar(@PathVariable Long id, @RequestBody EscolaUnica escolaUnica) {
+    EscolaUnica escolaUnicaAtualizado  = repository.getOne(id);
+    escolaUnicaAtualizado.setEscola(escolaUnica.getEscola());
+    escolaUnicaAtualizado.setAluno(escolaUnica.getAluno());
+    escolaUnicaAtualizado.setProfessor(escolaUnica.getProfessor());
+
+    repository.save(escolaUnicaAtualizado);
+  }
 
 }

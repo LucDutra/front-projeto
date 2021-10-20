@@ -13,32 +13,36 @@ import java.util.Optional;
 @RequestMapping("/aluno")
 public class AlunoController {
 
-    @Autowired
-    private AlunoRepository repository;
+  @Autowired
+  private AlunoRepository repository;
 
-    @GetMapping
-    public List<Aluno> listarTudo() {
-        return repository.findAll();
-    }
+  @GetMapping
+  public List<Aluno> listarTudo() {
+    return repository.findAll();
+  }
 
-    @PostMapping
-    public Aluno salvar(@RequestBody Aluno aluno) {
-        return repository.save(aluno);
-    }
+  @PostMapping
+  public Aluno salvar(@RequestBody Aluno aluno) {
+    return repository.save(aluno);
+  }
 
-    @DeleteMapping("/{id}")
-    @Transactional
-    public void remover(@PathVariable Long id) {
-        Optional<Aluno> optional = repository.findById(id);
-        if (optional.isPresent()) {
-            repository.deleteById(id);
-        }
+  @DeleteMapping("/{id}")
+  @Transactional
+  public void remover(@PathVariable Long id) {
+    Optional<Aluno> optional = repository.findById(id);
+    if (optional.isPresent()) {
+      repository.deleteById(id);
     }
+  }
 
-    @PutMapping("/{id}")
-    public void atualizar(@PathVariable Long id, @RequestBody Aluno aluno) {
-        Aluno alunoAtualizado  = repository.getOne(id);
-        alunoAtualizado.setNome(aluno.getNome());
-        repository.save(alunoAtualizado);
-    }
+  @PutMapping("/{id}")
+  public void atualizar(@PathVariable Long id, @RequestBody Aluno aluno) {
+    Aluno alunoAtualizado = repository.getOne(id);
+    alunoAtualizado.setNome(aluno.getNome());
+    alunoAtualizado.setEndereco(aluno.getEndereco());
+    alunoAtualizado.setEscola(aluno.getEscola());
+    alunoAtualizado.setTelefone(aluno.getTelefone());
+    alunoAtualizado.setTurma(aluno.getTurma());
+    repository.save(alunoAtualizado);
+  }
 }

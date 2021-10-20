@@ -39,6 +39,10 @@ public class ResponsavelController {
     public void atualizar(@PathVariable Long id, @RequestBody Responsavel responsavel) {
         Responsavel responsavelAtualizado  = repository.getOne(id);
         responsavelAtualizado.setNome(responsavel.getNome());
+      responsavelAtualizado.setEndereco(responsavel.getEndereco());
+      responsavelAtualizado.setTelefone(responsavel.getTelefone());
+      responsavelAtualizado.setEstadoCivil(responsavel.getEstadoCivil());
+      
         repository.save(responsavelAtualizado);
     }
 }

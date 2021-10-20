@@ -18,5 +18,16 @@ public class Turma {
     private Long id;
 
     @Column
-    private String nome;
+  private String nome;
+
+    @Column
+    private String turno;
+
+  @Column
+  private Integer idAluno;
+
+  @Column
+  private Integer idMateria;
+
+
 }

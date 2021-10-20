@@ -18,7 +18,7 @@ public class Chamada {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column
-    private LocalDateTime dataAula = LocalDateTime.now();
-    @Column
+    private LocalDateTime dataAula;
+    @Column(name = "id_turma")
     private int turma;
 }

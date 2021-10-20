@@ -21,11 +21,11 @@ public class FichaMedica {
     @Column
     private String tipoSanguineo;
     @Column
-    private int deficiencia;
+    private int idDeficiencia;
     @Column
     private Double peso;
     @Column
     private Double altura;
     @Column
-    private String planoSaude;
+    private String planoDeSaude;
 }
