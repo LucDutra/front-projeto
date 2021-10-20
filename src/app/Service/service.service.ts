@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { alunoEspecifico } from '../entitys/alunoEspecifico';
 import { cadastroEscola } from '../entitys/cadastroEscola';
 import { cadastroProfessor } from '../entitys/cadastroProfessor';
+import { infoEscola } from '../entitys/infoEscola';
 
 
 @Injectable({
@@ -82,6 +83,18 @@ export class ServiceService {
     return this.http.get<cadastroEscola[]>(this.cadastroEscolaUrl);
 
   }
+  // CRUD Cadastro PROFESSOR FINAL <------------------
+
+   // CRUD info ESCOLA INICIO <------------------
+    infoEscola = this.baseURL + "/infoEscola"
+
+    getInfoEscola() {
+    return this.http.get<infoEscola[]>(this.infoEscola);
+  }
+
+    deleteInfoEscola(){
+      return this.http.delete<infoEscola[]>(this.infoEscola)
+    }
   // CRUD Cadastro PROFESSOR FINAL <------------------
 
 }
