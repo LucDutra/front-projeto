@@ -9,26 +9,32 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Override
-    public void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.inMemoryAuthentication()
-                .withUser("admin")
-                .password("admin")
-                .roles("ROLE");
-    }
+  @Override
+  public void configure(AuthenticationManagerBuilder auth) throws Exception {
+    auth.inMemoryAuthentication()
+      .withUser("admin")
+      .password("admin")
+      .roles("ROLE");
+  }
 
 
-    @Override
-    public void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
-                .antMatchers("/aluno/").permitAll()
-                .antMatchers("/escola/").permitAll()
-                .antMatchers("/escola_unica/").permitAll()
-                .antMatchers("/professor/").permitAll()
-                .anyRequest().permitAll()
-                .and()
-                .httpBasic().and()
-                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
-                .csrf().disable();
-    }
+  @Override
+  public void configure(HttpSecurity http) throws Exception {
+    http.authorizeRequests()
+      .antMatchers("/aluno/").permitAll()
+      .antMatchers("/escola/").permitAll()
+      .antMatchers("/escola_unica/").permitAll()
+      .antMatchers("/ficha-medica/").permitAll()
+      .antMatchers("/materia/").permitAll()
+      .antMatchers("/materia-professor/").permitAll()
+      .antMatchers("/responsavel/").permitAll()
+      .antMatchers("/professor/").permitAll()
+      .antMatchers("/turma/").permitAll()
+
+      .anyRequest().permitAll()
+      .and()
+      .httpBasic().and()
+      .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
+      .csrf().disable();
+  }
 }
