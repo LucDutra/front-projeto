@@ -1,4 +1,4 @@
-import { cadastroAluno } from './../entitys/cadastroAluno';
+import { cadastroAluno } from '../entitys/cadastroAluno';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { alunoEspecifico } from '../entitys/alunoEspecifico';
@@ -8,19 +8,19 @@ import { alunoEspecifico } from '../entitys/alunoEspecifico';
 @Injectable({
   providedIn: 'root'
 })
-export class ServiceGeralService {
+export class ServiceService {
 
   constructor(private http: HttpClient) { }
 
   baseURL = "http://localhost:8080";
 
-  alunoEspecificoUrl = this.baseURL + "/alunoEspecifico";
+  alunoEspecificoUrl = this.baseURL + "/aluno";
 
 
 
 
-// CRUD Aluno especifico INICIO  <------------------
-  
+  // CRUD Aluno especifico INICIO  <------------------
+
   getAlunoEspecifico() {
     return this.http.get<alunoEspecifico[]>(this.alunoEspecificoUrl);
   }
@@ -30,7 +30,7 @@ export class ServiceGeralService {
   }
 
   getAlunoEspecificoById(id: number) {
-    return ""
+    return this.http.get<alunoEspecifico>(this.baseURL + "/" + id);
   }
 
   update(alunoEspecifico: alunoEspecifico) {
@@ -39,13 +39,18 @@ export class ServiceGeralService {
   // CRUD Aluno especifico FINAL  <------------------
 
 
-// CRUD Cadasto ALUNO INICIO  <------------------
-cadastroAlunoUrl = this.baseURL + "/cadastroAluno";
+  // CRUD Cadasto ALUNO INICIO  <------------------
+  cadastroAlunoUrl = this.baseURL + "/cadastroAluno";
 
-addCadastroAluno(cadastroAluno: cadastroAluno) {
-  return this.http.post<cadastroAluno>(this.cadastroAlunoUrl, cadastroAluno);
-}
-  
-// CRUD Cadasto ALUNO  FINAL  <------------------
+  addCadastroAluno(cadastroAluno: cadastroAluno) {
+    return this.http.post<cadastroAluno>(this.cadastroAlunoUrl, cadastroAluno);
+  }
+
+  getCadastroAluno() {
+    return this.http.get<cadastroAluno[]>(this.cadastroAlunoUrl);
+  }
+
+
+  // CRUD Cadasto ALUNO  FINAL  <------------------
 
 }

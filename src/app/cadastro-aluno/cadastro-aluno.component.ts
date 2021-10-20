@@ -1,5 +1,7 @@
+import { cadastroAluno } from '../entitys/cadastroAluno';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ServiceService } from '../Service/service.service';
 
 @Component({
   selector: 'app-cadastro-aluno',
@@ -8,8 +10,10 @@ import { Router } from '@angular/router';
 })
 export class CadastroAlunoComponent implements OnInit {
 
+  cadastroAluno: cadastroAluno = new cadastroAluno();
+
   constructor(
-    private router : Router
+    private router: Router, private service: ServiceService
 
   ) { }
 
@@ -18,6 +22,14 @@ export class CadastroAlunoComponent implements OnInit {
 
   public voltarPaginaPrincipal() {
     this.router.navigate(['']);
+  }
+
+  addCadastroAluno() {
+    this.service.addCadastroAluno(this.cadastroAluno)
+      .subscribe(data => {
+        alert("Registro salvo com sucesso.");
+        this.router.navigate(["alunoEspecifico"]);
+      })
   }
 
 }
