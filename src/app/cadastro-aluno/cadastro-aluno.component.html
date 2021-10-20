@@ -1,160 +1,107 @@
-<!doctype html>
-<html lang="en">
+<form class="row g-3 mt-3 bg-dark border border-secondary mx-auto">
+    <div class="col-md-12">
+        <label for="nome" class="form-label letras">Nome</label>
+        <input type="text" class="form-control" [(ngModel)]="cadastroAluno.nome" name="nome">
+    </div>
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <div class="col-12">
+        <label for="escola" class="form-label letras">Escola</label>
+        <input type="text" class="form-control" name="escola">
+    </div>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <div class="col-12">
+        <label for="cpf" class="form-label letras">CPF</label>
+        <input type="text" class="form-control" name="cpf">
+    </div>
 
-    <!--style CSS-->
-    <link rel="stylesheet" href="cadastro-aluno.component.css">
+    <div class="col-12">
+        <label for="telefone" class="form-label letras">Telefone</label>
+        <input type="text" class="form-control" name="telefone">
+    </div>
 
-    <title>Cadastro Aluno</title>
+    <div class="col-12">
+        <label for="turma" class="form-label letras">Turma</label>
+        <input type="text" class="form-control" name="turma">
+    </div>
 
-</head>
+    <div class="col-12">
+        <label for="email" class="form-label letras">Email</label>
+        <input type="text" class="form-control" name="email">
+    </div>
 
-<body class="bg-info">
+    <div class="col-12">
+        <label for="sexo" class="form-label letras">Sexo</label>
+        <input type="text" class="form-control" name="sexo">
+    </div>
 
-    <header>
-        <!--inicio cabeçalho-->
+    <h4 class="letras">Informações dos responsaveis</h4>
 
-        <nav class="navbar navbar-expand-sm navbar-light bg-info">
-            <div class="container-fluid logo">
-                <a class="navbar-brand" href="#">
-                    <img src="img/Logo.png" alt="">
-                </a>
-            </div>
-        </nav>
+    <div class="col-md-12">
+        <label for="nome" class="form-label letras">Nome</label>
+        <input type="text" class="form-control" name="nome">
+    </div>
 
-        <h1>Cadastro Do Aluno</h1>
+    <div class="col-md-12">
+        <label for="endereco" class="form-label letras">endereco</label>
+        <input type="text" class="form-control" name="endereco">
+    </div>
 
-    </header>
-    <!--fim cabeçalho-->
+    <div class="col-12">
+        <label for="telefone" class="form-label letras">Telefone</label>
+        <input type="text" class="form-control" name="telefone">
+    </div>
 
-    <form class="row g-3 mt-3 bg-dark border border-secondary mx-auto">
-        <div class="col-md-12">
-            <label for="nome" class="form-label letras">Nome</label>
-            <input type="text" class="form-control"  name="nome">
-        </div>
+    <div class="col-12">
+        <label for="cpf" class="form-label letras">CPF</label>
+        <input type="text" class="form-control" name="cpf">
+    </div>
 
-        <div class="col-12">
-            <label for="escola" class="form-label letras">Escola</label>
-            <input type="text" class="form-control"  name="escola">
-        </div>
+    <div class="col-12">
+        <label for="estadoCivil" class="form-label letras">estadoCivil</label>
+        <input type="text" class="form-control" name="estadoCivil">
+    </div>
 
-        <div class="col-12">
-            <label for="cpf" class="form-label letras">CPF</label>
-            <input type="text" class="form-control" name="cpf">
-        </div>
+    <div class="col-12">
+        <label for="email" class="form-label letras">Email</label>
+        <input type="text" class="form-control" name="email">
+    </div>
 
-        <div class="col-12">
-            <label for="telefone" class="form-label letras">Telefone</label>
-            <input type="text" class="form-control"  name="telefone">
-        </div>
+    <h4 class="letras">Informações da Ficha Médica</h4>
 
-        <div class="col-12">
-            <label for="turma" class="form-label letras">Turma</label>
-            <input type="text" class="form-control"  name="turma">
-        </div>
+    <div class="col-md-12">
+        <label for="tipoSanguineo" class="form-label letras">tipoSanguineo</label>
+        <input type="text" class="form-control" name="tipoSanguineo">
+    </div>
 
-        <div class="col-12">
-            <label for="email" class="form-label letras">Email</label>
-            <input type="text" class="form-control"  name="email">
-        </div>
+    <div class="col-12">
+        <label for="deficiencia" class="form-label letras">deficiencia</label>
+        <input type="text" class="form-control" name="deficiencia">
+    </div>
 
-        <div class="col-12">
-            <label for="sexo" class="form-label letras">Sexo</label>
-            <input type="text" class="form-control"  name="sexo">
-        </div>
+    <div class="col-12">
+        <label for="peso" class="form-label letras">peso</label>
+        <input type="text" class="form-control" name="peso">
+    </div>
 
-        <h4 class="letras">Informações dos responsaveis</h4>
+    <div class="col-12">
+        <label for="altura" class="form-label letras">altura</label>
+        <input type="text" class="form-control" name="altura">
+    </div>
 
-        <div class="col-md-12">
-            <label for="nome" class="form-label letras">Nome</label>
-            <input type="text" class="form-control"  name="nome">
-        </div>
-
-        <div class="col-md-12">
-            <label for="endereco" class="form-label letras">endereco</label>
-            <input type="text" class="form-control"  name="endereco">
-        </div>
-
-        <div class="col-12">
-            <label for="telefone" class="form-label letras">Telefone</label>
-            <input type="text" class="form-control"  name="telefone">
-        </div>
-
-        <div class="col-12">
-            <label for="cpf" class="form-label letras">CPF</label>
-            <input type="text" class="form-control"  name="cpf">
-        </div>
-
-        <div class="col-12">
-            <label for="estadoCivil" class="form-label letras">estadoCivil</label>
-            <input type="text" class="form-control" name="estadoCivil">
-        </div>
-
-        <div class="col-12">
-            <label for="email" class="form-label letras">Email</label>
-            <input type="text" class="form-control"  name="email">
-        </div>
-
-        <h4 class="letras">Informações da Ficha Médica</h4>
-
-        <div class="col-md-12">
-            <label for="tipoSanguineo" class="form-label letras">tipoSanguineo</label>
-            <input type="text" class="form-control"  name="tipoSanguineo">
-        </div>
-
-        <div class="col-12">
-            <label for="deficiencia" class="form-label letras">deficiencia</label>
-            <input type="text" class="form-control"  name="deficiencia">
-        </div>
-
-        <div class="col-12">
-            <label for="peso" class="form-label letras">peso</label>
-            <input type="text" class="form-control"  name="peso">
-        </div>
-
-        <div class="col-12">
-            <label for="altura" class="form-label letras">altura</label>
-            <input type="text" class="form-control"  name="altura">
-        </div>
-
-        <div class="col-12">
-            <label for="planoSaude" class="form-label letras">planoSaude</label>
-            <input type="text" class="form-control"  name="planoSaude">
-        </div>
+    <div class="col-12">
+        <label for="planoSaude" class="form-label letras">planoSaude</label>
+        <input type="text" class="form-control" name="planoSaude">
+    </div>
 
 
 
-        <div>
-            <button  type="submit" class="btn btn-outline-light mb-1">Enviar</button>
-           
-            <button (click)="voltarPaginaPrincipal()" type="submit" class="btn btn-outline-light mb-1">Voltar</button>
+    <div>
+        <button type="submit" class="btn btn-outline-light mb-1">Enviar</button>
+
+        <button (click)="voltarPaginaPrincipal()" type="submit" class="btn btn-outline-light mb-1">Voltar</button>
 
 
-        </div>
-        
+    </div>
 
-    </form>
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-    -->
-</body>
-
-</html>
+</form>
