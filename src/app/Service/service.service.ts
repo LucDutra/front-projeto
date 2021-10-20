@@ -95,6 +95,6 @@ export class ServiceService {
     deleteInfoEscola(){
       return this.http.delete<infoEscola[]>(this.infoEscola)
     }
-  // CRUD Cadastro PROFESSOR FINAL <------------------
+  // CRUD info ESCOLA FINAL <------------------
 
 }
