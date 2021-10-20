@@ -2,6 +2,7 @@ import { cadastroAluno } from '../entitys/cadastroAluno';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { alunoEspecifico } from '../entitys/alunoEspecifico';
+import { cadastroEscola } from '../entitys/cadastroEscola';
 
 
 
@@ -52,5 +53,16 @@ export class ServiceService {
 
 
   // CRUD Cadasto ALUNO  FINAL  <------------------
+   cadastroEscolaUrl = this.baseURL + "/cadastroEscola"
+
+   addCadastroEscola(cadastroEscola: cadastroEscola) {
+     return this.http.post<cadastroEscola>(this.cadastroEscolaUrl, cadastroEscola);
+
+   }
+
+   getCadastroEscola() {
+     return this.http.get<cadastroEscola[]>(this.cadastroEscolaUrl);
+     
+   }
 
 }
