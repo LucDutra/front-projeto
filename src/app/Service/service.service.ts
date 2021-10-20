@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { alunoEspecifico } from '../entitys/alunoEspecifico';
 import { cadastroEscola } from '../entitys/cadastroEscola';
-
+import { cadastroProfessor } from '../entitys/cadastroProfessor';
 
 
 @Injectable({
@@ -16,7 +16,6 @@ export class ServiceService {
   baseURL = "http://localhost:8080";
 
   alunoEspecificoUrl = this.baseURL + "/aluno";
-
 
 
 
@@ -39,6 +38,7 @@ export class ServiceService {
   }
   // CRUD Aluno especifico FINAL  <------------------
 
+  
 
   // CRUD Cadasto ALUNO INICIO  <------------------
   cadastroAlunoUrl = this.baseURL + "/cadastroAluno";
@@ -50,19 +50,38 @@ export class ServiceService {
   getCadastroAluno() {
     return this.http.get<cadastroAluno[]>(this.cadastroAlunoUrl);
   }
-
-
   // CRUD Cadasto ALUNO  FINAL  <------------------
-   cadastroEscolaUrl = this.baseURL + "/cadastroEscola"
 
-   addCadastroEscola(cadastroEscola: cadastroEscola) {
-     return this.http.post<cadastroEscola>(this.cadastroEscolaUrl, cadastroEscola);
 
-   }
 
-   getCadastroEscola() {
-     return this.http.get<cadastroEscola[]>(this.cadastroEscolaUrl);
-     
-   }
+  // CRUD Cadastro ESCOLA INICIO <------------------
+  cadastroEscolaUrl = this.baseURL + "/cadastroEscola"
+
+  addCadastroEscola(cadastroEscola: cadastroEscola) {
+    return this.http.post<cadastroEscola>(this.cadastroEscolaUrl, cadastroEscola);
+
+  }
+
+  getCadastroEscola() {
+    return this.http.get<cadastroEscola[]>(this.cadastroEscolaUrl);
+
+  }
+  // CRUD Cadastro ESCOLA FINAL <------------------
+
+  
+
+  // CRUD Cadastro PROFESSOR INICIO <------------------
+  cadastroProfesor = this.baseURL + "/cadastroProfessor"
+
+  addCadastroProfessor(cadastroProfesor: cadastroProfessor) {
+    return this.http.post<cadastroProfessor>(this.cadastroProfesor, cadastroProfesor);
+
+  }
+
+  getCadastroProfessor() {
+    return this.http.get<cadastroEscola[]>(this.cadastroEscolaUrl);
+
+  }
+  // CRUD Cadastro PROFESSOR FINAL <------------------
 
 }
