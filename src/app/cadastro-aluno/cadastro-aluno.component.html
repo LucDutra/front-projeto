@@ -6,39 +6,40 @@
 
     <div class="col-12">
         <label for="escola" class="form-label letras">Escola</label>
-        <input type="text" class="form-control" name="escola">
+        <input type="text" class="form-control" [(ngModel)]="cadastroAluno.escola" escola="escola">
     </div>
 
     <div class="col-12">
         <label for="cpf" class="form-label letras">CPF</label>
-        <input type="text" class="form-control" name="cpf">
+        <input type="text" class="form-control" [(ngModel)]="cadastroAluno.cpf" cpf="cpf">
     </div>
 
     <div class="col-12">
         <label for="telefone" class="form-label letras">Telefone</label>
-        <input type="text" class="form-control" name="telefone">
+        <input type="text" class="form-control" [(ngModel)]="cadastroAluno.telefone" telefone="telefone">
     </div>
 
     <div class="col-12">
         <label for="turma" class="form-label letras">Turma</label>
-        <input type="text" class="form-control" name="turma">
+        <input type="text" class="form-control" [(ngModel)]="cadastroAluno.turma" turma="turma">
     </div>
 
     <div class="col-12">
         <label for="email" class="form-label letras">Email</label>
-        <input type="text" class="form-control" name="email">
+        <input type="text" class="form-control" [(ngModel)]="cadastroAluno.email" email="email">
     </div>
 
     <div class="col-12">
         <label for="sexo" class="form-label letras">Sexo</label>
-        <input type="text" class="form-control" name="sexo">
+        <input type="text" class="form-control" [(ngModel)]="cadastroAluno.sexo " sexo="sexo">
     </div>
 
     <h4 class="letras">Informações dos responsaveis</h4>
 
     <div class="col-md-12">
         <label for="nome" class="form-label letras">Nome</label>
-        <input type="text" class="form-control" name="nome">
+        <input type="text" class="form-control" [(ngModel)]="cadastroAluno.nomeResponsavel"
+            nomeResponsavel="nomeResponsavel">
     </div>
 
     <div class="col-md-12">

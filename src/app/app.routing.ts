@@ -1,5 +1,5 @@
-import { TurmaComponent } from './turma/turma.component';
-import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
+
+
 import { TabelaAlunoComponent } from './tabela-aluno/tabela-aluno.component';
 import { PerfilEscolaComponent } from './perfil-escola/perfil-escola.component';
 import { PainelProfessorComponent } from './painel-professor/painel-professor.component';
@@ -13,6 +13,8 @@ import { PainelAlunoComponent } from './painel-aluno/painel-aluno.component';
 import { CadastroProfessorComponent } from './cadastro-professor/cadastro-professor.component';
 import { ModuleWithProviders } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { TurmaComponent } from './turma/turma.component';
+import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
 
 
 
@@ -20,7 +22,7 @@ import { RouterModule, Routes } from "@angular/router";
 const APP_ROUTES: Routes = [
 
 
-    { path: '', component: PaginaPrincipalComponent  },
+    { path: '', component: PaginaPrincipalComponent },
     { path: 'cadastroProfessor', component: CadastroProfessorComponent },
     { path: 'painelAluno', component: PainelAlunoComponent },
     { path: 'tabelaTurma', component: TabelaTurmaComponent },
@@ -32,7 +34,7 @@ const APP_ROUTES: Routes = [
     { path: 'painelProfessor', component: PainelProfessorComponent },
     { path: 'perfilEscola', component: PerfilEscolaComponent },
     { path: 'tabelaAluno', component: TabelaAlunoComponent },
-    { path: 'turma', component: TurmaComponent  }
+    { path: 'turma', component: TurmaComponent }
 
 ];
 

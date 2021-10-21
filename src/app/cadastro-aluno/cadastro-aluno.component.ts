@@ -13,7 +13,7 @@ export class CadastroAlunoComponent implements OnInit {
   cadastroAluno: cadastroAluno = new cadastroAluno();
 
   constructor(
-    private router: Router, private service: ServiceService
+    private router: Router,
 
   ) { }
 
@@ -23,13 +23,13 @@ export class CadastroAlunoComponent implements OnInit {
   public voltarPaginaPrincipal() {
     this.router.navigate(['']);
   }
-
-  addCadastroAluno() {
-    this.service.addCadastroAluno(this.cadastroAluno)
-      .subscribe(data => {
-        alert("Registro salvo com sucesso.");
-        this.router.navigate(["alunoEspecifico"]);
-      })
-  }
-
+  /*
+    addCadastroAluno() {
+      this.service.addCadastroAluno(this.cadastroAluno)
+        .subscribe(data => {
+          alert("Registro salvo com sucesso.");
+          this.router.navigate(["alunoEspecifico"]);
+        })
+    }
+  */
 }
